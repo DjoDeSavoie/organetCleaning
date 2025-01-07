@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../logo/logoOrgaNet1.png" />
+
+
+
+  <title>Liste Zone</title>
+
+
+  <link   rel="stylesheet" type ="text/css" href="styleZone.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--responsive--> 
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img src="../logo/logoOrgaNet1.png" style="width: 90px; height : auto"/>
+          
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="../equipe.html">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/index.html">Description du projet</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        
+        <!-- Avatar -->
+        
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <div class="menu">
+     <h2> Etat des zones </h2>
+  </div> <br><br>
+
+   <div class="container">
+       <!--Diagram-->
+        <div>
+          <canvas id="diagram"></canvas>  
+        </div>
+   </div> <br><br>
+
+    <div class="listZone"> <h3>Liste des zones </h3></div>
+
+    <div id='alert-message' role='alert'></div>
+
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nom</th>
+
+          <th scope="col">Description</th>   
+
+          <th scope="col">Heure du Dernier Nettoyage</th>
+
+          <th scope="col">Temps Entre Chaque Nettoyage</th>
+          
+          <th scope="col">Action</th>
+        </tr>
+        
+      </thead>
+      
+      <tbody id="zonesList">
+
+      </tbody>
+      
+
+    </table>
+  
+
+    <!-- menu déroulant pour séléctionner le nombre de Zone par page -->
+
+    
+  </div>
+
+  
+  <a href="../admin/creation/createZone.html"><button class="btn btn-primary">Creation Zone</button></a>
+</body>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type="text/javascript" src="listZones.js"></script>
+
+<script type="text/javascript" src="diagram.js"></script>
+
+<script type="text/javascript" src="../admin/editZone/editZone.js"></script>
+
+<script type="text/javascript" src="../admin/deleteZone/deleteZone.js"></script>
+
+<script type="text/javascript" src="../cleanZone/cleanZone.js"></script>
+
+
+
