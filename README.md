@@ -1,73 +1,85 @@
-**Organet**
+Organet
 
 Software Development Project: Factory Cleaning Prioritization
 
-**Project Overview**
+Project Overview
 
-**Context**
+Context
 
-I got the idea of that web app as I used to work as a summer job in a flour mill in which I saw a task that could be automatised in order to make the quality assurance save time : the cleaning process of all the different zones of the factory.
-Then I made a group with 2 other Computer Science Engineering students that felt concerned by this idea and found this project challenging. 
+The idea for this web application originated from a summer job I had at a flour mill. I noticed that the task of monitoring and scheduling cleaning for different factory zones could be automated, saving significant time for the quality assurance team. Motivated by this observation, I teamed up with two other Computer Science Engineering students who shared my interest and found this project both meaningful and challenging.
 
-We chose to address hygiene challenges in the food industry for this project. In a factory that supplies food to a large population, hygiene is a critical concern.
+Hygiene is a critical concern in the food industry, especially in factories supplying food to large populations. With this in mind, Organet aims to streamline the cleaning process and ensure a high standard of hygiene through automation.
 
-Our goal is to develop a web application that monitors and displays the cleanliness status of different areas in the factory.
+How It Works
 
-**How It Works**
+1. Factory Zones
 
-_**1.	Factory Zones:**_
+The factory is divided into various strategic zones, each with a specific cleaning interval determined by its exposure to dust and other contaminants.
 
-The factory is divided into various strategic zones. Each zone has a specific cleaning interval based on its exposure to dust and other contaminants.
+2. Maintenance Tracking
+	•	Cleaning staff use their badges to log the start and end of their cleaning sessions for a given zone.
+	•	After completing a cleaning session, the staff member uploads a photo of the cleaned zone to the application.
+	•	The application visually tracks cleanliness:
+	•	Green: Zone is clean.
+	•	Orange: Zone requires attention soon.
+	•	Red: Zone needs immediate cleaning.
 
-_2.	Maintenance Tracking:_
- 
-When a cleaning staff member starts cleaning a zone, they will log the start time by scanning their badge.
-Once cleaning is completed, the staff member logs the end time similarly and uploads a photo of the cleaned zone to the application.
-The application will display the zone in green when cleaned. Over time, the status will transition to orange, then red, based on the set cleaning interval.
-When a zone needs cleaning again, the system will trigger an alert and assign the task to an available cleaning staff member based on their schedule.
- 
-_3.	Adaptability:_
- The application is flexible. Factories can define:
-	-Specific zones to monitor.
-	-The cleaning interval for each zone.
+When a zone reaches the red status, the system sends an alert and assigns the task to an available cleaning staff member based on their schedule.
 
-**Database Modeling**	
-	•	_History Table:_
-A relational database can be used with a history table, combining primary keys from the user and zone tables, along with timestamps.
+3. Adaptability
 
-Improvements to Implement
-	•	_Cookie Management:_
-Implement a cookie management system to store client information for smooth navigation between pages.
-	•	_Password Encryption:_
-Encrypt user passwords for secure registration and login processes.
-	•	_Unit Testing:_
-Develop unit tests for each commit to ensure application stability.
+The application is designed to be flexible and adaptable. Factories can:
+	•	Define specific zones to monitor.
+	•	Set customized cleaning intervals for each zone.
 
-**Project Directory Organization**
-	•	_Naming Conventions:_
+Database Modeling
+
+History Table
+
+The application uses a relational database. The history table combines primary keys from the user and zone tables, along with timestamps, to keep track of cleaning sessions.
+
+Planned Improvements
+	1.	Cookie Management
+Implement cookie management to store client information and enable smooth navigation between pages.
+	2.	Password Encryption
+Secure user data by encrypting passwords during registration and login.
+	3.	Unit Testing
+Add unit tests for each commit to ensure the application’s stability and reliability.
+
+Project Directory Organization
+
+Naming Conventions
 	•	Use English for naming files, folders, and variables.
-	•	Replace spaces with camel case for file names (e.g., listZones.html instead of listezones.html).
-	•	Use singular names for actions affecting one item (e.g., deleteZone) and plural names for actions affecting multiple items (e.g., listZones).
+	•	Use camelCase for file names (e.g., listZones.html instead of listezones.html).
+	•	For actions:
+	•	Singular for single items (e.g., deleteZone).
+	•	Plural for multiple items (e.g., listZones).
 
-**Starting the Server**
+Getting Started
+
+Launching the Application
+
+Follow these steps to start the application:
 	1.	Open your terminal.
 	2.	Split the terminal into two windows:
-	•	_Frontend:_
+	•	Frontend:
 
-cd front
-node index.js
-
-
-_	•	Backend:_
-
-cd back
-node index.js
+cd front  
+node index.js  
 
 
-_	3.	Open your browser and navigate to:_
+	•	Backend:
 
-localhost:3000
+cd back  
+node index.js  
+
+
+	3.	Open your browser and navigate to:
+
+localhost:3000  
 
 
 
-You can now use the web application.
+You can now use the web application!
+
+Thank you for choosing Organet to improve hygiene standards and streamline cleaning operations in your factory!
