@@ -15,17 +15,18 @@ Our goal is to develop a web application that monitors and displays the cleanlin
 
 **How It Works**
 
-	_**1.	Factory Zones:**_
+_**1.	Factory Zones:**_
+
 The factory is divided into various strategic zones. Each zone has a specific cleaning interval based on its exposure to dust and other contaminants.
 
-	_2.	Maintenance Tracking:_
+_2.	Maintenance Tracking:_
  
 	•	When a cleaning staff member starts cleaning a zone, they will log the start time by scanning their badge.
 	•	Once cleaning is completed, the staff member logs the end time similarly and uploads a photo of the cleaned zone to the application.
 	•	The application will display the zone in green when cleaned. Over time, the status will transition to orange, then red, based on the set cleaning interval.
 	•	When a zone needs cleaning again, the system will trigger an alert and assign the task to an available cleaning staff member based on their schedule.
  
-	_3.	Adaptability:_
+_3.	Adaptability:_
  The application is flexible. Factories can define:
 	•	Specific zones to monitor.
 	•	The cleaning interval for each zone.
