@@ -72,8 +72,6 @@ node index.js
 
 cd back  
 node index.js  
-
-
 	3.	Open your browser and navigate to:
 
 localhost:3000  
