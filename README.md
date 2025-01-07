@@ -2,8 +2,9 @@
 
 Software Development Project: Factory Cleaning Prioritization
 
-Project Overview
+**Project Overview**
 
+**Context**
 I got the idea of that web app as I used to work as a summer job in a flour mill in which I saw a task that could be automatised in order to make the quality assurance save time : the cleaning process of all the different zones of the factory.
 Then I made a group with 2 other Computer Science Engineering students that felt concerned by this idea and found this project challenging. 
 
