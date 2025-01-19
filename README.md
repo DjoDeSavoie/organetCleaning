@@ -60,21 +60,22 @@ Getting Started
 Launching the Application
 
 Follow these steps to start the application:
-	1.	Open your terminal.
-	2.	Split the terminal into two windows:
-	•	Frontend:
+1.	Open your terminal.
+2.	Split the terminal into two windows:
 
-cd front  
-node index.js  
+Frontend:
+	
+ 	cd front  
+  
+	node index.js  
 
 
-	•	Backend:
+Backend:
 
-cd back  
-node index.js  
-	3.	Open your browser and navigate to:
-
-localhost:3000  
+	cd back  
+	node index.js  
+	
+ 3.	Open your browser and navigate to: localhost:3000 
 
 
 
